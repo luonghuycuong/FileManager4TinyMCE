@@ -1,7 +1,5 @@
 <?php
-
-session_start();
-$_SESSION["verify"] = "FileManager4TinyMCE";
+include_once 'session_auth.php';
 
 if(isset($_POST['submit'])){
 

@@ -1,7 +1,5 @@
 <?php
-
-session_start();
-if($_SESSION["verify"] != "FileManager4TinyMCE") die('forbiden');
+include_once 'session_auth.php';
 include 'config.php';
 
 $path=$_POST['path'];

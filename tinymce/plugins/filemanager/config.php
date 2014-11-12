@@ -1,5 +1,5 @@
 <?php 
-if($_SESSION["verify"] != "FileManager4TinyMCE") die('forbidden');
+include_once 'session_auth.php';
 
 $root = rtrim($_SERVER['DOCUMENT_ROOT'],'/'); // don't touch this configuration
 

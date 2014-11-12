@@ -1,6 +1,5 @@
 <?php 
-
-if($_SESSION["verify"] != "FileManager4TinyMCE") die('forbiden');
+include_once 'session_auth.php';
 
 function deleteDir($dir) {
     if (!file_exists($dir)) return true;
