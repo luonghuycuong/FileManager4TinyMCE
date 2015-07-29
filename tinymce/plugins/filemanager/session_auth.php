@@ -1,4 +1,4 @@
-<?php
-//auth prepare
+<?php 
 session_start();
-if($_SESSION["verify"] != "FileManager4TinyMCE") die('forbidden');
+if(!isset($_SESSION["FileManager4TinyMCE"]) || !$_SESSION["FileManager4TinyMCE"])
+    die('forbidden');
